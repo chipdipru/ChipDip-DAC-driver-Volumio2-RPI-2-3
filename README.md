@@ -10,7 +10,7 @@ git clone https://github.com/chipdipru/ChipDip-DAC-driver-Volumio
 
 3)
 
-sudo cp ChipDip-DAC-driver-Volumio/snd-soc-chipdip-dac-4.19.188-v7.ko /lib/modules/'uname -r'/kernel/sound/soc/bcm/snd-soc-chipdip-dac.ko
+sudo cp ChipDip-DAC-driver-Volumio/snd-soc-chipdip-dac-4.19.188-v7.ko /lib/modules/`uname -r`/kernel/sound/soc/bcm/snd-soc-chipdip-dac.ko
 
 sudo cp ChipDip-DAC-driver-Volumio/chipdip-dac-gpio.dtbo /boot/overlays/chipdip-dac-gpio.dtbo
 
