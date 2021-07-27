@@ -12,7 +12,7 @@ git clone https://github.com/chipdipru/ChipDip-DAC-driver-Volumio
 
 sudo cp ChipDip-DAC-driver-Volumio/snd-soc-chipdip-dac-4.19.188-v7.ko /lib/modules/`uname -r`/kernel/sound/soc/bcm/snd-soc-chipdip-dac.ko
 
-sudo cp ChipDip-DAC-driver-Volumio/chipdip-dac-gpio.dtbo /boot/overlays/chipdip-dac-gpio.dtbo
+sudo cp ChipDip-DAC-driver-Volumio/chipdip-dac.dtbo /boot/overlays/chipdip-dac.dtbo
 
 4)
 
@@ -24,7 +24,7 @@ sudo nano /volumio/app/plugins/system_controller/i2s_dacs/dacs.json
 
 In the DAC list add
 
-{"id":"chipdip-master-dac","name":"CHIPDIP Master DAC","overlay":"chipdip-dac-gpio","alsanum":"2","mixer":"","modules":"","script":"","needsreboot":"yes"},
+{"id":"chipdip-master-dac","name":"CHIPDIP Master DAC","overlay":"chipdip-dac","alsanum":"2","mixer":"","modules":"","script":"","needsreboot":"yes"},
 
 6)
 
