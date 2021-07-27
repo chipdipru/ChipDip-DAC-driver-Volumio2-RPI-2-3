@@ -1,31 +1,21 @@
 # ChipDip-DAC-driver-Volumio
 
-1) Install git
+<em><strong>1) Install git</em></strong>
 
-sudo apt install git
+<pre><code>sudo apt install git</code></pre>
 
-2) Clone git repository
+<em><strong>2) Clone git repository</em></strong>
 
-git clone https://github.com/chipdipru/ChipDip-DAC-driver-Volumio
+<pre><code>git clone https://github.com/chipdipru/ChipDip-DAC-driver-Volumio</code></pre>
 
-3)
+<em><strong>3) Make script "chipdip-dac-install.sh" executable</em></strong>
 
-sudo cp ChipDip-DAC-driver-Volumio/snd-soc-chipdip-dac-4.19.188-v7.ko /lib/modules/`uname -r`/kernel/sound/soc/bcm/snd-soc-chipdip-dac.ko
+<pre><code>chmod +x ChipDip-DAC-driver-Volumio/chipdip-dac-install.sh</code></pre>
 
-sudo cp ChipDip-DAC-driver-Volumio/chipdip-dac.dtbo /boot/overlays/chipdip-dac.dtbo
+<em><strong>4) Start script to install ChipDip DACs</em></strong>
 
-4)
+<pre><code>ChipDip-DAC-driver-Volumio/chipdip-dac-install.sh</code></pre>
 
-sudo depmod
+<em><strong>5) Reboot system to complete installation</em></strong>
 
-5)
-
-sudo nano /volumio/app/plugins/system_controller/i2s_dacs/dacs.json
-
-In the DAC list add
-
-{"id":"chipdip-master-dac","name":"CHIPDIP Master DAC","overlay":"chipdip-dac","alsanum":"2","mixer":"","modules":"","script":"","needsreboot":"yes"},
-
-6)
-
-reboot
+<pre><code>reboot</code></pre>
