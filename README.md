@@ -1,5 +1,9 @@
 # Installation ChipDip DAC Driver for Volumio 2.907 02-07-2021
 
+RasPi DSP Machine 1 (ADAU1701) - https://www.chipdip.ru/product0/9000827685
+
+RasPi DSP Machine 2 (PCM5242) - https://www.chipdip.ru/product0/9000827686
+
 <em><strong>1) Install git</em></strong>
 
 <pre><code>sudo apt install git</code></pre>
